@@ -1,0 +1,2 @@
+angular.module('app').run(['$templateCache', function($templateCache) {$templateCache.put('pages/home/home.html','<div class="home component"><input type="text" ng-model="value" placeholder="text"> <button ng-click="add()">Add</button><hr><ul><li ng-repeat="v in values" data-v="{{v | b64}}">{{v}}</li></ul></div><a href="#!/profile">Profile</a>');
+$templateCache.put('pages/profile/profile.html','<div class="profile component">Profile</div><a href="#!/">Home</a>');}]);
